@@ -12,9 +12,9 @@ agent any
 
 			    stage('Build docker image'){
                              steps{
-
-                                    sh 'docker build -t 203jmt0064/angular:${TAG}'
-                                    sh 'docker build -t 203jmt0064/angular:latest'
+                                     docker.build("203jmt0064/angular:${TAG}")
+                                      docker.build("203jmt0064/angular:latest")
+                                
 
 
                              }
