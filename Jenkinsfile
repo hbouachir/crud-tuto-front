@@ -9,7 +9,7 @@ agent any
 
 
 
-ages {
+stages {
     stage('INSTALL PACKAGES') {
       steps {
         sh "npm install"
